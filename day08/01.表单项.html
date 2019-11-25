@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>表单</title>
+</html>
+<body>
+    <form action="target.html" method="get">
+        <label for="userName">用户名：</label>
+        <input type="text" name="un" id="userName"><br/>
+        <label for="password">密码：</label>
+        <input type="password" name="pwd" id="password"><br/>
+        爱好：<input type="radio" name="gender" id="" value="male">男
+        <input type="radio" name="gender" id="" value="female">女
+        <br/>
+
+        爱好：<input type="checkbox" name="hobby" value="lq">篮球
+        <input type="checkbox" name="hobby" value="pq">排球
+        <input type="checkbox" name="hobby" value="zq">足球
+        <br/>
+
+        <!-- multiple="multiple" -->
+        <select name="star" id="selectedStart" >
+            <optgroup label="女明星">
+                    <option value="fbb">范冰冰</option>
+                    <option value="lxr">林心如</option>
+            </optgroup>
+                    
+        <optgroup label="男明星">
+                <option value="zbs">赵本山</option>
+                <option value="ldh">刘德华</option>
+        </optgroup>
+        </select>
+        <br/>
+        <textarea name="introduce" id="asdf" cols="30" rows="10"></textarea>
+        <input type="submit" value="提交">
+        <input type="button" value="按钮">
+        <button type="submit" name="">注册</button>
+        <button type="reset" name="">重置</button>
+    </form>
+</body>

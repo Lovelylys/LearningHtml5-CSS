@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>伪类选择器</title>
+    </head>
+    <style type="text/css">
+    a:link{
+        color: green;
+    }
+    a:visited{
+        color: red;
+    }
+    p:hover{
+        background-color: orange;
+    }
+    input:focus{
+        background-color: purple;
+    }
+    span::selection{
+        color: blue;
+    }
+    </style>
+    <body>
+        <a href="https://www.baidu.com">去百度</a><br/>
+        <a href="www.123456.com">未被访问过的连接</a>
+        <p>伪类选择器</p>
+        <p>伪类选择器</p>
+        <input>
+        <br> 
+        <span>选中这行字就会变蓝色</span>
+    </body>
+</html>

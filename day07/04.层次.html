@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>层次</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+            /* opacity: 0.5; */
+            filter: alpha(opacity=50);
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+            z-index: 9999;
+            top: 100px;
+        }
+    </style>
+</html>
+<body>
+    <div class="box1"></div>
+    <div class="box4">
+            <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+    <span class="s1">这是一个span</span>
+</body>
